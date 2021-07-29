@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PROJECT TORCH</title>
+      <!-- Components -->
+    <link rel="stylesheet" type="text/css" href="styles/style.css" media="screen" />
+<!--    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+<!--    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+<!--    <script type="text/javascript" src="https://d3js.org/d3.v4.js"></script>-->
+<!--    <script type="text/javascript" src="https://d3js.org/d3.v6.min.js"></script>-->
+    <script type="text/javascript" src="js/d3.v6.min.js"></script>
+    <script type="text/javascript" src="js/lodash.min.js"></script>
+<!--    <script type="text/javascript" src="js/graph_multiple.js"></script>-->
+    <script type="text/javascript" src="js/script.js"></script>
+<!--    <script type="text/javascript" src="js/graph.js"></script>-->
+<!--    <script type="text/javascript" src="js/graph2.js"></script>-->
+<!--    <script type="text/javascript" src="js/tooltip.js"></script>-->
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+<!--    <link rel="stylesheet" type="text/css" href="styles/multiple_graphs.css">-->
+
+
+</head>
+<body>
+<!--    <button type="button" onclick="draw()">DRAW</button>-->
+<!--    <a href="#" class="btn btn-info" role="button" onclick="draw()"  data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Link Button</a>-->
+<!--    <a href="#" class="btn btn-info" role="button" id="popover-button-d3">POPOVER</a>-->
+     <button type="button" onclick="remove()">REMOVE</button>
+    <!-- Initialize a select button -->
+<select id="selectButton"></select>
+<select id="selectButton2"></select>
+<!--    <div id="container-visual" style="background: #736e6e; height: 800px; width: 800px;">-->
+    <div id="cont1" class="container-visual" style="background: #dddbdb">
+        <div id="viz1" class="visual">
+            <div id="info1" class='panel_on info' style="display:none"></div>
+        </div>
+    </div>
+<!--    <div id="container">-->
+<!--        <label>Test</label>-->
+<!--        <input type="text"/>-->
+<!--        <button>Go</button>-->
+<!--    </div>-->
+
+<script>
+    document.addEventListener('dblclick', function(e) {
+    var container = document.getElementById('info1');
+    if (!container.contains(e.target)) {
+        container.style.display = 'none';
+    }
+});
+</script>
+
+</body>
+
+</html>
